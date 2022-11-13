@@ -9,8 +9,7 @@ from django.contrib import messages
 
 
 def home(request):
-    return HttpResponse("Hello")
-    # return render(request, 'home/home.html')
+    return render(request, 'home/home.html')
 
 def contact(request):
     if request.method=="POST":

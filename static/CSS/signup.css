@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@400;500;600;800&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+div img{
+    display: block;
+    width: 35vw;
+    margin: 50px auto 5px;
+}
+
+.form{
+    width: 38%;
+    height: 54vh;
+    margin: 60px auto;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.36) 0px 10px 36px 0px, rgba(0, 0, 0, 0.36) 0px 0px 0px 0px;
+}
+
+.content ul{
+    display: grid;
+    grid-template-columns: 1fr 0.02fr 1fr;
+    column-gap: 30px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.content ul li a{
+    text-decoration: none;
+    color: green;
+}
+.line{
+    background-color: green;
+    height: 7.4vh;
+    margin-top: 7px;
+}
+
+#firstname{
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
+    width: 30%;
+    height: 30px;
+    margin: 2% 0% 2.5% 12%;
+}
+#lastname{
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
+    width: 30%;
+    height: 30px;
+    margin: 2% 0% 2.5% 3%;
+}
+
+#phnnumber{
+    display: block;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
+    width: 70%;
+    height: 30px;
+    margin: 0% 0% 2.5% 12%;
+}
+
+#reg-email{
+    display: block;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
+    width: 70%;
+    height: 30px;
+    margin: 0% 0% 2.5% 12%;
+}
+
+#your-pass{
+    display: block;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
+    width: 70%;
+    height: 30px;
+    margin: 0.9% 0% 2.5% 12%;
+}
+
+#username{
+    display: block;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
+    width: 70%;
+    height: 30px;
+    margin: 6% 0% 5.5% 12%;
+}
+
+#password{
+    display: block;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
+    width: 70%;
+    height: 30px;
+    margin: 0.9% 0% 2.5% 12%;
+}
+
+input{
+    padding-left: 5%;
+    font-size: medium;
+}
+
+::placeholder{
+    padding: 100px 5px;
+    font-size: medium;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 4.7% 0% 1% 67% ;
+  padding: 1.5% 5.5%;
+  color: white;
+  background: linear-gradient(0deg, rgb(13, 104, 39) 0%, rgb(32, 128, 40) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #6db78398;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.login-btn:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #45b96698;
+}
+
+.login-btn:active {
+  box-shadow: 0 0.3em 1em -0.5em #38d76898;
+}
+
+.signup-btn {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 2% 0% 1% 63.1% ;
+  padding: 1.5% 5.5%;
+  color: white;
+  background: linear-gradient(0deg, rgb(13, 104, 39) 0%, rgb(32, 128, 40) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #6db78398;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  cursor: pointer;
+  /* -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation; */
+}
+
+.signup-btn:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #45b96698;
+}
+
+.signup-btn:active {
+  box-shadow: 0 0.3em 1em -0.5em #38d76898;
+}
+
