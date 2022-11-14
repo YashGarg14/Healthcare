@@ -33,13 +33,26 @@ def signup(request):
         email = request.POST['email']
         pass1 = request.POST['pass1']
 
+
+        # # check for errorneous input
+        # if len(username)>10:
+        #     messages.error(request, " Your user name must be under 10 characters")
+        #     return redirect('home')
+
+        # if not username.isalnum():
+        #     messages.error(request, " User name should only contain letters and numbers")
+        #     return redirect('home')
+        # if len(pass1)<8:
+        #      messages.error(request, "Password length must be atleast 8 characters")
+        #      return redirect('home')
+
         myuser = User.objects.create_user(username, email, pass1)
         myuser.first_name = fname
         myuser.last_name = lname
 
         myuser.save()
 
-        messages.success(request,"Your Account has been created successfully")
+        # messages.success(request,"Your Account has been created successfully")
         return redirect("signin")
 
     return render(request, 'home/signup.html')
@@ -58,14 +71,14 @@ def signin(request):
             return render(request, 'home/home.html', {'username':username})
 
         else:
-            messages.error(request, "Bad Credentials")
+            # messages.error(request, "Bad Credentials")
             return redirect('home')
 
     return render(request, 'home/login.html')
 
 def signout(request):
     logout(request)
-    messages.success(request,"Logout successfully")
+    # messages.success(request,"Logout successfully")
     return redirect("home")
 
 def about(request):
