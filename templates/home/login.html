@@ -1,26 +1,31 @@
 {% extends 'base.html' %}
 {% load static%}
 {% block title %}Login{% endblock title %}
-{% block css %}<link rel="stylesheet" href="{% static 'css/signup.css' %}">{% endblock css %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/signup.css' %}">{% endblock css %}
 {% block body %}
-    <div>
-        <div class="form">
-            <div class="content">
-              <ul>
-                <li><h3><a href="/signin">Log in</a></h3></li>
-                <li class="line"></li>
-                <li><h3><a href="/signup">Sign Up</a></h3></li>
-              </ul>
-            </div>
-            <div class="essentials">
-              <form action="/signin" method="post">
-                {% csrf_token %}
-                <input type="text" id="username" name="username" value= "" placeholder="Your username">
-                <input type="password" id="password" name="pass1" value="" placeholder="Your password">
-                <button type="submit" class="login-btn" role="button">Login</button>
-              </form>
-            </div>
-        </div>
-        
+<div>
+  <div class="form">
+    <div class="content">
+      <ul>
+        <li>
+          <h3><a href="/signin">Log in</a></h3>
+        </li>
+        <li class="line"></li>
+        <li>
+          <h3><a href="/signup">Sign Up</a></h3>
+        </li>
+      </ul>
     </div>
-    {% endblock body %}
+    <div class="essentials">
+      <form action="/signin" method="post">
+        {% csrf_token %}
+        <input type="text" id="username" name="username" value="" placeholder="Your username">
+        <input type="password" id="password" name="pass1" value="" placeholder="Your password">
+        <button type="submit" class="login-btn" role="button">Login</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+{% endblock body %}
