@@ -4,34 +4,27 @@
 {% block css %}<link rel="stylesheet" href="{% static 'css/signup.css' %}">{% endblock css %}
 {% block body %}
 
-
-<div>
-  <img src="{% static 'images/logo.png' %}" alt="logo">
   <div class="form">
       <div class="content">
         <ul>
-          <li><h3><a href="/login"><i class="fa-light fa-user"></i>Log in</a></h3></li>
+          <li><h3><a href="/signin">Log in</a></h3></li>
           <li class="line"></li>
-          <li><h3><a href="/signup">Sign up</a></h3></li>
+          <li><h3><a href="/signup">Sign Up</a></h3></li>
         </ul>
       </div>
       <div class="essentials">
-        <form action="/login" method="post">
+        <form action="/signup" method="post">
           {% csrf_token %}
-          <input type="text" id="firstname" name="name" placeholder="First Name">
-          <input type="text" id="lastname" name="name" placeholder="Last Name">
-          <input type="text" id="userrr" name="usname" placeholder="Username">
-          <input type="phnnumber" id="phnnumber" name="phone" placeholder="Mobile Number">
-          <input type="email" id="reg-email" name="mail" placeholder="Email">
-          <input type="text" id="your-pass" name="passs" placeholder="Your password">
+          <input type="text" id="firstname" name="fname" placeholder="First Name">
+          <input type="text" id="lastname" name="lname" placeholder="Last Name">
+          <input type="text" id="userrr" name="username" placeholder="Username">
+          <input type="email" id="reg-email" name="email" placeholder="Email">
+          <input type="password" id="your-pass" name="pass1" placeholder="Your password">
           <button type="submit" class="signup-btn" role="button">Sign up</button>
         </form>
       </div>
-  </div>
-  
-</div>
+    </div>
 
-    
 </body>
 </html>
 

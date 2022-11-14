@@ -5,45 +5,50 @@ body{
     box-sizing: border-box;
 }
 
-div img{
-    display: block;
-    width: 35vw;
-    margin: 50px auto 5px;
-}
-
 .form{
-    width: 38%;
-    height: 23rem;
+    width: 34%;
+    height: 21.3rem;
     margin: 40px auto;
     border-radius: 13px;
     box-shadow: rgba(0, 0, 0, 0.36) 0px 10px 36px 0px, rgba(0, 0, 0, 0.36) 0px 0px 0px 0px;
 }
+.content{
+    margin: 0;
+    margin-bottom: 3%;
+}
 
 .content ul{
     display: grid;
-    grid-template-columns: 1fr 0.02fr 1fr;
+    grid-template-columns: 1fr 0.1fr 1fr;
     column-gap: 30px;
     text-align: center;
     margin: 0px;
     padding: 0px;
     list-style: none;
 }
+.content ul li{
+    padding-top: 15px;
+    margin: 0;
+}
 
 .content ul li a{
     text-decoration: none;
     color: green;
+    font-size: 1.4rem;
 }
-.line{
+
+
+.line {
     background-color: green;
-    height: 7.4vh;
-    margin-top: 7px;
+    width: 22%;
+    height: 85%;
 }
 
 #firstname{
     border: 1px solid rgb(180, 180, 180);
     border-radius: 5px;
     box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
-    width: 30%;
+    width: 36%;
     height: 30px;
     margin: 2% 0% 2.5% 12%;
 }
@@ -51,7 +56,7 @@ div img{
     border: 1px solid rgb(180, 180, 180);
     border-radius: 5px;
     box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
-    width: 30%;
+    width: 36%;
     height: 30px;
     margin: 2% 0% 2.5% 3%;
 }
@@ -60,17 +65,7 @@ div img{
     border: 1px solid rgb(180, 180, 180);
     border-radius: 5px;
     box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
-    width: 70%;
-    height: 30px;
-    margin: 0% 0% 2.5% 12%;
-}
-
-#phnnumber{
-    display: block;
-    border: 1px solid rgb(180, 180, 180);
-    border-radius: 5px;
-    box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
-    width: 70%;
+    width: 76%;
     height: 30px;
     margin: 0% 0% 2.5% 12%;
 }
@@ -80,7 +75,7 @@ div img{
     border: 1px solid rgb(180, 180, 180);
     border-radius: 5px;
     box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
-    width: 70%;
+    width: 76%;
     height: 30px;
     margin: 0% 0% 2.5% 12%;
 }
@@ -90,7 +85,7 @@ div img{
     border: 1px solid rgb(180, 180, 180);
     border-radius: 5px;
     box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
-    width: 70%;
+    width: 76%;
     height: 30px;
     margin: 0.9% 0% 2.5% 12%;
 }
@@ -100,7 +95,7 @@ div img{
     border: 1px solid rgb(180, 180, 180);
     border-radius: 5px;
     box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
-    width: 70%;
+    width: 76%;
     height: 30px;
     margin: 9% 0% 5.5% 12%;
 }
@@ -110,18 +105,18 @@ div img{
     border: 1px solid rgb(180, 180, 180);
     border-radius: 5px;
     box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
-    width: 70%;
+    width: 76%;
     height: 30px;
     margin: 7.9% 0% 2.5% 12%;
 }
 
 input{
-    padding-left: 5%;
+    padding-left: 2%;
     font-size: medium;
 }
 
 ::placeholder{
-    padding: 100px 5px;
+    padding: 50px 5px;
     font-size: medium;
 }
 
@@ -159,7 +154,7 @@ input{
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  margin: 2% 0% 2% 63.1% ;
+  margin: 2% 0% 2% 63.7% ;
   padding: 1.5% 5.5%;
   color: white;
   background: linear-gradient(0deg, rgb(13, 104, 39) 0%, rgb(32, 128, 40) 100%);

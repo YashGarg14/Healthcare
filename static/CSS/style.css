@@ -7,7 +7,7 @@ body{
 section {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 2fr 3.7fr 1.4fr;
+    grid-template-columns: 2fr 3.1fr 2fr;
     box-shadow: rgba(0, 0, 0, 0.10) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     position: relative;
 }
@@ -18,9 +18,27 @@ section {
     padding :15px;
 }
 
+.buttonss{
+    display: grid;
+    grid-template-columns: 0.3fr 1.1fr 1fr;
+    padding :15px;
+}
+
 .buttons a{
     text-decoration: none;
     color: #f7f9ff;
+}
+
+.buttonss img{
+    width: 45%;
+    margin-top: 31%;
+    margin-left: 40%;
+}
+.buttonss h3{
+    font-size: 130%;
+    color: rgb(148, 148, 148);
+    margin-top: 10.3%;
+    margin-left: 5%;
 }
 
 .logo img{
@@ -445,12 +463,12 @@ span{
     color: #e2e7fe;
 }
 .container h2{
-    margin: 5% 43.4%;
+    margin: 3% 42.4%;
     padding-bottom: 1%;
     color: rgb(87, 85, 85);
     font-weight: 700;
     border-bottom:3.6px solid green;
-    width: 12.35%;
+    width: 14.35%;
 }
 .forms{
     display: grid;
@@ -522,19 +540,19 @@ span{
 #contactusname{
     width: 40%;
     margin: 6% 4% 3% 6%;
-    padding: 1% 5%;
+    padding: 1% 2%;
     color: grey;
 }
 #contactusemail{
     width: 43%;
     margin: 4% 4% 2% 0%;
-    padding: 1% 5%;
+    padding: 1% 2%;
     color: grey;
 }
 #contactusphone{
     width: 88%;
     margin: 2.5% 6% 5% 6%;
-    padding: 1% 5%;
+    padding: 1% 1.5%;
     color: grey;
 }
 #contactusmessage{
@@ -546,3 +564,6 @@ span{
     margin: 2% 33% 4%;
 }
 
+::placeholder{
+    padding: 1% 2%;
+}

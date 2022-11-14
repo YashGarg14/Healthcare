@@ -4,7 +4,7 @@
 {% block body %}
 
 <div class="container">
-    <h2>Contact</h2>
+    <h2>Contact Us</h2>
     <div class="forms">
         <div class="addemailetc">
            <div class="ouraddress">
@@ -28,8 +28,8 @@
                 {% csrf_token %}
                 <input type="text" placeholder="Your Name" id="contactusname" name="name">
                 <input type="email" placeholder="Your Email" id="contactusemail" name="email">
-                <input type="number" placeholder="Phone Number" id="contactusphone" name="phone">
-                <textarea id="contactusmessage" cols="80" rows="5" placeholder="Message"name="content"></textarea>
+                <input type="text" placeholder="Phone Number" id="contactusphone" name="phone">
+                <textarea id="contactusmessage" cols="10" rows="5" placeholder="Message"name="content"></textarea>
                 <button type="submit" class="btn btn-success" id="contactsubmitbtn">Send Message</button>
               </form>
         </div>
