@@ -1,31 +1,8 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+{% extends 'base.html' %}
+{% load static%}
+{% block title %}Health Suraksha{% endblock title %}
+{% block body %}
 
-    <title>Healthcare Services</title>
-  </head>
-  <body>
-    <section class="head">
-      <header class="logo">
-        <a href="#home"><img src="logo2.png" alt="logo"></a>
-      </header>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#review">Reviews</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        <div class="buttons">
-          <button type="button" class="btn btn-success"><a href="login.html">Log in</a></button>
-          <button type="button" class="btn btn-success"><a href="register.html">Sign up</a></button>
-        </div>
-        
     </section>
     <main class="home-page">
       <div class="content" id="home">
@@ -44,24 +21,24 @@
     </div>
     <div class="services" id="service">
       <div class="consultation">
-        <a href="consultation.html"><img src="doctor-patient.png" alt=""></a>
-        <p><a href="consultation.html">Doctor Consultation</a></p>
+        <a href="/consultation"><img src="{% static 'images/doctor-patient.png' %}" alt=""></a>
+        <p><a href="/consultation">Doctor Consultation</a></p>
       </div>
       <div class="ambulance">
-        <a href="call_ambulance.html"><img src="ambulance.png" alt=""></a>
-        <p><a href="call_ambulance.html">Call an Ambulance</a></p>
+        <a href="/call_ambulance"><img src="{% static 'images/ambulance.png' %}"  alt=""></a>
+        <p><a href="/call_ambulance">Call an Ambulance</a></p>
       </div>
       <div class="AR">
-        <a href="AR_tut.html"><img src="360-degrees.png" alt=""></a>
-        <p><a href="AR_tut.html">AR/VR Tutorials</a></p>
+        <a href="/AR_tut"><img src="{% static 'images/360-degrees.png' %}" alt=""></a>
+        <p><a href="/AR_tut">AR/VR Tutorials</a></p>
       </div>
       <div class="blood_donation">
-        <a href="blood_don.html"><img src="blood-icon.png" alt=""></a>
-        <p><a href="blood_don.html">Blood Donation</a></p>
+        <a href="/blood_don"><img src="{% static 'images/blood-icon.png' %}" alt=""></a>
+        <p><a href="/blood_don">Blood Donation</a></p>
       </div>
       <div class="lab_tsts">
-        <a href="lab_test.html"><img src="microscope.png" alt=""></a>
-        <p><a href="lab_test.html">Lab Tests</a></p>
+        <a href="/lab_test"><img src="{% static 'images/microscope.png' %}" alt=""></a>
+        <p><a href="/lab_test">Lab Tests</a></p>
       </div>
     </div>
     <div class="heading" id="review">
@@ -118,5 +95,5 @@
 
   </footer>
 
-  </body>
-</html>
+
+{% endblock body %}

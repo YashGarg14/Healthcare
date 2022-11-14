@@ -13,8 +13,8 @@ div img{
 
 .form{
     width: 38%;
-    height: 54vh;
-    margin: 60px auto;
+    height: 23rem;
+    margin: 40px auto;
     border-radius: 13px;
     box-shadow: rgba(0, 0, 0, 0.36) 0px 10px 36px 0px, rgba(0, 0, 0, 0.36) 0px 0px 0px 0px;
 }
@@ -55,6 +55,15 @@ div img{
     height: 30px;
     margin: 2% 0% 2.5% 3%;
 }
+#userrr{
+    display: block;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
+    width: 70%;
+    height: 30px;
+    margin: 0% 0% 2.5% 12%;
+}
 
 #phnnumber{
     display: block;
@@ -93,7 +102,7 @@ div img{
     box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
     width: 70%;
     height: 30px;
-    margin: 6% 0% 5.5% 12%;
+    margin: 9% 0% 5.5% 12%;
 }
 
 #password{
@@ -103,7 +112,7 @@ div img{
     box-shadow: rgba(137, 137, 143, 0.14) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
     width: 70%;
     height: 30px;
-    margin: 0.9% 0% 2.5% 12%;
+    margin: 7.9% 0% 2.5% 12%;
 }
 
 input{
@@ -122,7 +131,7 @@ input{
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  margin: 4.7% 0% 1% 67% ;
+  margin: 8.7% 0% 1% 67% ;
   padding: 1.5% 5.5%;
   color: white;
   background: linear-gradient(0deg, rgb(13, 104, 39) 0%, rgb(32, 128, 40) 100%);
@@ -150,7 +159,7 @@ input{
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  margin: 2% 0% 1% 63.1% ;
+  margin: 2% 0% 2% 63.1% ;
   padding: 1.5% 5.5%;
   color: white;
   background: linear-gradient(0deg, rgb(13, 104, 39) 0%, rgb(32, 128, 40) 100%);
@@ -171,4 +180,3 @@ input{
 .signup-btn:active {
   box-shadow: 0 0.3em 1em -0.5em #38d76898;
 }
-

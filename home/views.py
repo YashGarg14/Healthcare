@@ -62,7 +62,8 @@ def handleSignUp(request):
     # else:
     #     return HttpResponse("404 - Not found")
     # return HttpResponse("login")
-    pass
+    return render(request, "home/signup.html")
+
 
 def handeLogin(request):
     # if request.method=="POST":
