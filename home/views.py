@@ -14,7 +14,9 @@ def contact(request):
         phone=request.POST['phone']
         content =request.POST['content']
         if len(name)<2 or len(email)<3 or len(phone)<10 or len(content)<4 or phone.isnumeric()==False:
-            messages.error(request, "Please fill the form correctly")
+            messages.error(request, "Please enter phone number correctly")
+        if name.isalpha()==False:
+            messages.error(request, "Please enter name correctly")
         else:
             contact=Contact(name=name, email=email, phone=phone, content=content)
             contact.save()
@@ -34,26 +36,27 @@ def signup(request):
         pass1 = request.POST['pass1']
 
 
-        # # check for errorneous input
-        # if len(username)>10:
-        #     messages.error(request, " Your user name must be under 10 characters")
-        #     return redirect('home')
+        # check for errorneous input
+        if len(username)>10:
+            messages.error(request, " Your user name must be under 10 characters")
+            return redirect('signup')
 
-        # if not username.isalnum():
-        #     messages.error(request, " User name should only contain letters and numbers")
-        #     return redirect('home')
-        # if len(pass1)<8:
-        #      messages.error(request, "Password length must be atleast 8 characters")
-        #      return redirect('home')
+        if not username.isalnum():
+            messages.error(request, " User name should only contain letters and numbers")
+            return redirect('signup')
+        if len(pass1)<8:
+             messages.error(request, "Password length must be atleast 8 characters")
+             return redirect('signup')
 
-        myuser = User.objects.create_user(username, email, pass1)
-        myuser.first_name = fname
-        myuser.last_name = lname
+        else:
+            myuser = User.objects.create_user(username, email, pass1)
+            myuser.first_name = fname
+            myuser.last_name = lname
 
-        myuser.save()
+            myuser.save()
 
-        # messages.success(request,"Your Account has been created successfully")
-        return redirect("signin")
+            messages.success(request,"Your Account has been created successfully")
+            return redirect("signin")
 
     return render(request, 'home/signup.html')
 
@@ -68,11 +71,12 @@ def signin(request):
         if user is not None:
             login(request, user)
             fname = user.first_name
+            messages.success(request,"You have been logged in successfully")
             return render(request, 'home/home.html', {'username':username})
 
         else:
-            # messages.error(request, "Bad Credentials")
-            return redirect('home')
+            messages.error(request, "Invalid Credentials")
+            return redirect('signin')
 
     return render(request, 'home/login.html')
 
@@ -85,6 +89,9 @@ def about(request):
     pass
 
 def consultation(request):
+    # if not request.user.is_authenticated:
+    #     return redirect('signin')
+    # else:
     return render(request, 'home/consultation.html')
 
 def ambulance(request):

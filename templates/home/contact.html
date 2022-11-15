@@ -29,10 +29,10 @@
         <div class="mainform">
             <form class="contactcontent" action="/contact" method="post">
                 {% csrf_token %}
-                <input type="text" placeholder="Your Name" id="contactusname" name="name">
-                <input type="email" placeholder="Your Email" id="contactusemail" name="email">
-                <input type="text" placeholder="Phone Number" id="contactusphone" name="phone">
-                <textarea id="contactusmessage" cols="10" rows="5" placeholder="Message" name="content"></textarea>
+                <input type="text" placeholder="Your Name" id="contactusname" name="name" required>
+                <input type="email" placeholder="Your Email" id="contactusemail" name="email" required>
+                <input type="text" placeholder="Phone Number" id="contactusphone" name="phone" required>
+                <textarea id="contactusmessage" cols="10" rows="5" placeholder="Message" name="content" required></textarea>
                 <button type="submit" class="btn btn-success" id="contactsubmitbtn">Send Message</button>
             </form>
         </div>
