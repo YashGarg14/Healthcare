@@ -62,9 +62,7 @@ def signup(request):
 
 def signin(request):
 
-    if  request.user.is_authenticated:
-        return redirect('home')
-    elif request.method == "POST":
+    if request.method == "POST":
         username = request.POST['username']
         pass1 = request.POST['pass1']
 
