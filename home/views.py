@@ -62,7 +62,9 @@ def signup(request):
 
 def signin(request):
 
-    if request.method == "POST":
+    if  request.user.is_authenticated:
+        return redirect('home')
+    elif request.method == "POST":
         username = request.POST['username']
         pass1 = request.POST['pass1']
 
@@ -89,10 +91,10 @@ def about(request):
     pass
 
 def consultation(request):
-    # if not request.user.is_authenticated:
-    #     return redirect('signin')
-    # else:
-    return render(request, 'home/consultation.html')
+    if not request.user.is_authenticated:
+        return redirect('signin')
+    else:
+        return render(request, 'home/consultation.html')
 
 def ambulance(request):
     return render(request, 'home/call_ambulance.html')

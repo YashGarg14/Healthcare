@@ -20,11 +20,11 @@
   <div class="essentials">
     <form action="/signup" method="post">
       {% csrf_token %}
-      <input type="text" id="firstname" name="fname" placeholder="First Name">
-      <input type="text" id="lastname" name="lname" placeholder="Last Name">
-      <input type="text" id="userrr" name="username" placeholder="Username">
-      <input type="email" id="reg-email" name="email" placeholder="Email">
-      <input type="password" id="your-pass" name="pass1" placeholder="Your password">
+      <input type="text" id="firstname" name="fname" placeholder="First Name" required>
+      <input type="text" id="lastname" name="lname" placeholder="Last Name" required>
+      <input type="text" id="userrr" name="username" placeholder="Username" required>
+      <input type="email" id="reg-email" name="email" placeholder="Email" required>
+      <input type="password" id="your-pass" name="pass1" placeholder="Your password" required>
       <button type="submit" class="signup-btn" role="button">Sign up</button>
     </form>
   </div>
