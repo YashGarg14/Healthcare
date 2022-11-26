@@ -28,6 +28,9 @@ def home(request):
 
 def signup(request):
 
+    if request.user.is_authenticated:
+        return redirect("/")
+        
     if request.method == "POST":
         username = request.POST['username']
         fname = request.POST['fname']
@@ -61,6 +64,9 @@ def signup(request):
     return render(request, 'home/signup.html')
 
 def signin(request):
+
+    if request.user.is_authenticated:
+        return redirect("/")
 
     if request.method == "POST":
         username = request.POST['username']
