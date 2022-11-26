@@ -76,13 +76,14 @@ def signin(request):
 
         if user is not None:
             login(request, user)
-            fname = user.first_name
+            # fname = user.first_name
             messages.success(request,"You have been logged in successfully")
             return render(request, 'home/home.html', {'username':username})
 
         else:
             messages.error(request, "Invalid Credentials")
             return redirect('signin')
+
 
     return render(request, 'home/login.html')
 
