@@ -21,7 +21,7 @@ section {
 .buttonss{
     display: grid;
     grid-template-columns: 0.3fr 1.1fr 1fr;
-    padding :15px;
+    padding :14px;
 }
 
 .buttons a{
@@ -32,7 +32,7 @@ section {
 .buttonss img{
     width: 45%;
     margin-top: 31%;
-    margin-left: 40%;
+    margin-left: 39%;
 }
 .buttonss h3{
     font-size: 130%;
@@ -570,4 +570,7 @@ span{
 ::placeholder{
     padding: 1% 2%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d3be72e2d2750e2430343e909454874fdbdebeef
