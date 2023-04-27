@@ -397,6 +397,10 @@ span{
 .tutorials p{
     margin: 0;
 }
+.tut-a{
+    text-decoration: none;
+    color: black;
+}
 
 .tutorials:hover {
     transform: scale(1.07);
@@ -566,3 +570,4 @@ span{
 ::placeholder{
     padding: 1% 2%;
 }
+
